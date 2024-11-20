@@ -1,0 +1,117 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5e6da;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Main container with curved box */
+.container {
+    background-color: #ffffff;
+    /*if its touching the sides left right*/
+    width: 90%;
+    max-width: 1500px;
+    /* curve of box */
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #a47c65;
+    padding: 20px;
+    text-align: center;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 10px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.navbar .brand {
+    font-family: 'Pacifico', cursive;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+/* Content box */
+.content-box {
+    /* space inside the box between text and edge */
+    padding: 30px;
+    text-align: center;
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.left {
+    flex: 1.5; /* Take 50% width of the center box*/
+    display: flex;
+    justify-content: center; /* Center image horizontally */
+    align-items: center; /* Center image vertically */
+}
+
+.image-container {
+    position: relative;
+    width: 350px;
+    height: auto;
+}
+
+.image-container img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.right {
+    flex: 2; /* Take more width for the text */
+    text-align: left;
+}
+
+.right h1 {
+    font-family: Swiss, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    color: #5d4633;
+}
+
+.right p {
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: 400;
+    color: #5d4633;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .intro {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .right {
+        text-align: center;
+    }
+}
