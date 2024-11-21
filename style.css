@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    background-color: #f9eae1;
+    background-color: #F5EFEB;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -27,7 +27,7 @@ body {
 
 /* Header Box */
 .header-box {
-    background-color: #7d4f50;
+    background-color: #F5EFEB;
     border-radius: 15px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -46,28 +46,24 @@ body {
 /* Words in the header */
 .header-box nav a {
     text-decoration: none;
-    color: #f9eae1;
+    color: #2F4156;
     font-size: clamp(16px, 4vw, 40px); /* Dynamic resizing */
-    font-weight: 600;
-    font-family: "DynaPuff", system-ui;
+    font-weight: 700;
+    font-family: "DM Serif Text", serif;
+    transition: all 0.5s ease;
+    display: inline-block;
 }
 
 /* Hover effect for navigation links */
 .header-box nav a:hover {
-    color: #ff9b94; /* Highlight color */
-    text-decoration: underline; /* Subtle underline */
-    transition: color 0.3s ease-in-out;
-}
-
-/* Add subtle scale effect for the image */
-.image-container img:hover {
+    color: #4474A3; /* Highlight color */
+    transition: all 0.5s ease;
     transform: scale(1.05); /* Slight zoom */
-    transition: transform 0.3s ease-in-out;
 }
 
 /* Content Box */
 .content-box {
-    background-color: #f9eae1;
+    background-color: #F5EFEB;
     border-radius: 15px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     padding: 30px;
@@ -93,12 +89,13 @@ body {
 .image-container img {
     width: 100%;
     border-radius: 20px;
+    transition: all 0.5s ease;
 }
 
 /* Add subtle scale effect for the image */
 .image-container img:hover {
     transform: scale(1.05); /* Slight zoom */
-    transition: transform 0.3s ease-in-out;
+    transition: all 0.5s ease;
 }
 
 .caption {
@@ -114,10 +111,10 @@ body {
 }
 
 .right h1 {
-    font-family: "Sour Gummy", serif;
+    font-family: "DM Serif Text", serif;
     font-size: 50px;
     font-weight: 700;
-    color: #cc8b86;
+    color: #2F4156;
     margin-bottom: 10px;
 }
 
@@ -126,35 +123,29 @@ body {
     font-size: 18px;
     font-weight: 400;
     line-height: 1.8; /* Improve readability */
-    color: #7d4f50;
-    font-family: 'Playfair Display', serif;
-}
-
-/* Optional: Add a bit more padding to the content-box */
-.content-box {
-    background-color: #f9eae1;
-    border-radius: 15px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    padding: 30px;
+    color: #2F4156;
+    font-family: "Tinos", serif;
 }
 
 /* CTA Button */
 .cta-button {
     display: inline-block;
-    background-color: #7d4f50;
-    color: #f9eae1;
+    background-color: #2F4156;
+    color: #F5EFEB;
     font-size: 18px;
     font-weight: bold;
     text-decoration: none;
     padding: 12px 20px;
     border-radius: 10px;
     margin-top: 20px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    transition: all 0.5s ease;
+    font-family: "Tinos", serif;
 }
 
 .cta-button:hover {
-    background-color: #cc8b86; /* Lighter shade on hover */
-    transform: translateY(-3px); /* Lift effect */
+    background-color: #567CBD; /* Lighter shade on hover */
+    transform: scale(1.05); /* Slight zoom */
+    transition: all 0.5s ease;
 }
 
 /* Scroll-to-Top Button */
@@ -162,8 +153,8 @@ body {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #7d4f50;
-    color: #f9eae1;
+    background-color: #2F4156;
+    color: #ffff;
     font-size: 18px;
     padding: 10px 15px;
     border: none;
@@ -175,7 +166,8 @@ body {
 }
 
 .scroll-top:hover {
-    background-color: #cc8b86;
+    background-color: #ffff;
+    color: #2F4156;
     transform: scale(1.1);
 }
 
